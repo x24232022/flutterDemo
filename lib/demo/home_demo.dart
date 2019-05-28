@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import './bottom_navigation_bar_demo.dart';
 import 'listView_demo.dart';
 import 'basic_demo.dart';
+import 'layoyt_demo.dart';
 class Home extends StatelessWidget {
   
   @override
@@ -46,7 +47,7 @@ class Home extends StatelessWidget {
             ListViewDemo(),
             // Icon(Icons.change_history,size: 128.0, color: Colors.black12,),
             BasicDemo(),
-            Icon(Icons.directions_bike,size: 128.0, color: Colors.black12,)
+            LayoutDemo(),
           ],
         ),
         drawer: Drawer(
