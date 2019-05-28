@@ -3,11 +3,11 @@ import 'package:flutter/material.dart';
 class BottomNavigationBarDemo extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    // TODO: implement createState
+
     return _BottomNavigationBarDemoState();
   }
 }
-
+//setState是StatefulWidget类中的方法，需要继承后重写
 class _BottomNavigationBarDemoState extends State<BottomNavigationBarDemo> {
   int _currentIndex = 0;
   void _onTapHander (int index){
@@ -17,7 +17,7 @@ class _BottomNavigationBarDemoState extends State<BottomNavigationBarDemo> {
   }
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+
     return BottomNavigationBar(
         //底部导航栏
         type: BottomNavigationBarType.fixed, //设置底部导航栏的样式
