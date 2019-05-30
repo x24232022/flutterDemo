@@ -4,6 +4,7 @@ import 'listView_demo.dart';
 import 'basic_demo.dart';
 import 'layoyt_demo.dart';
 import 'view_demo.dart';
+
 class Home extends StatelessWidget {
   
   @override
@@ -13,6 +14,7 @@ class Home extends StatelessWidget {
       child: Scaffold(
         backgroundColor: Colors.grey[100],
         appBar: AppBar(
+           centerTitle:true,//title文字居中
           //bar左上角的导航按钮
           // leading: IconButton(
           //   icon: Icon(Icons.menu),
