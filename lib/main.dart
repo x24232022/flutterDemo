@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'demo/home_demo.dart';
 import 'demo/sliver_demo.dart';
 import 'demo/navigater_demo.dart';
+import 'demo/http/http_demo.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget{
@@ -11,11 +12,12 @@ class MyApp extends StatelessWidget{
     return MaterialApp(
       debugShowCheckedModeBanner: false,//取消右上角debug标志
       //home: NavigatorDemo(),
-      initialRoute: "/",
+      initialRoute: "/http",
       routes: {
         "/" :(context) => Home(),//制定初始页面
-        "/about" :(context) =>Page(title: "Abuot",)
-      },
+        "/about" :(context) =>Page(title: "Abuot"),
+        "/http"  :(context) =>HttpDemo(),
+       },
       theme: ThemeData(
         primarySwatch: Colors.yellow,
         highlightColor: Color.fromRGBO(255, 255, 255, 0.5),//按下选项卡时的颜色
